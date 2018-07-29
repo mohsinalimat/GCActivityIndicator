@@ -4,6 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - GCActivityIndicator (0.1.0)
   - Nimble (7.0.3)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
@@ -11,12 +12,15 @@ PODS:
     - FBSnapshotTestCase (~> 2.0)
     - Nimble (~> 7.0)
   - Quick (1.2.0)
+  - SwiftLint (0.25.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
+  - GCActivityIndicator (from `../`)
   - Nimble (~> 7.0.2)
   - Nimble-Snapshots (~> 6.3.0)
   - Quick (~> 1.2.0)
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -24,13 +28,20 @@ SPEC REPOS:
     - Nimble
     - Nimble-Snapshots
     - Quick
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  GCActivityIndicator:
+    :path: "../"
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GCActivityIndicator: 72c7ac71570544c21e6b8f93c58a1b95201fa0f5
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
 
-PODFILE CHECKSUM: 77b6a07723cdfa8323c5e3cebfb036388382a419
+PODFILE CHECKSUM: 7f98745e8cc243e5ae927c354dc62949afc3786d
 
 COCOAPODS: 1.5.0

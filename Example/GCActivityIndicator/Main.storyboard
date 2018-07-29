@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FDz-t4-eRF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cUD-Mc-1PA">
+            <objects>
+                <viewController id="FDz-t4-eRF" customClass="ViewController" customModule="GCActivityIndicator_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Wm-pG-2It">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32E-42-glN">
+                                <rect key="frame" x="144" y="617" width="86" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="toggleAnimating" destination="FDz-t4-eRF" eventType="touchUpInside" id="P9J-MG-ZJh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLn-kF-JAX" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                                <rect key="frame" x="67" y="327.5" width="240" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="317-Cd-7BL"/>
+                                    <constraint firstAttribute="width" constant="240" id="Fx5-ue-eY6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Na-ru-0sW" firstAttribute="bottom" secondItem="32E-42-glN" secondAttribute="bottom" constant="20" id="CCc-nu-34k"/>
+                            <constraint firstItem="GLn-kF-JAX" firstAttribute="centerY" secondItem="7Na-ru-0sW" secondAttribute="centerY" id="oEN-xj-Us3"/>
+                            <constraint firstItem="GLn-kF-JAX" firstAttribute="centerX" secondItem="7Na-ru-0sW" secondAttribute="centerX" id="q5f-u6-4ib"/>
+                            <constraint firstItem="32E-42-glN" firstAttribute="centerX" secondItem="7Na-ru-0sW" secondAttribute="centerX" id="thf-Nk-pbp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Na-ru-0sW"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="GLn-kF-JAX" id="Jct-cu-kZe"/>
+                        <outlet property="animateButton" destination="32E-42-glN" id="Rz9-tZ-Vdb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQm-Cs-JX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="55.322338830584712"/>
+        </scene>
+    </scenes>
+</document>
