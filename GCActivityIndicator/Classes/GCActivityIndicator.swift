@@ -1,5 +1,5 @@
 //
-//  GCCustumActivityIndicator.swift
+//  GCActivityIndicator.swift
 //  GCActivityIndicator
 //
 //  Created by Graham Chance on 7/29/18.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class GCCustomActivityIndicator: UIView {
+public class GCActivityIndicator: UIView {
 
     public var hidesWhenStopped: Bool = true
 

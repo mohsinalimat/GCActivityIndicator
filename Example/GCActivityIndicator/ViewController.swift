@@ -15,9 +15,9 @@ class ViewController: UIViewController {
 
     private var animating: Bool = false
 
-    private var activityIndicators: [GCCustomActivityIndicator] {
+    private var activityIndicators: [GCActivityIndicator] {
         return view.subviews.compactMap {
-            return $0 as? GCCustomActivityIndicator
+            return $0 as? GCActivityIndicator
             }.sorted {
                 return $0.tag < $1.tag
         }

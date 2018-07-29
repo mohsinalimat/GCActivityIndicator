@@ -26,7 +26,7 @@
                                     <action selector="toggleAnimating" destination="FDz-t4-eRF" eventType="touchUpInside" id="P9J-MG-ZJh"/>
                                 </connections>
                             </button>
-                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAm-5V-Cd6" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAm-5V-Cd6" customClass="GCActivityIndicator" customModule="GCActivityIndicator">
                                 <rect key="frame" x="165" y="137.5" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" secondItem="XAm-5V-Cd6" secondAttribute="height" multiplier="1:1" id="W7M-RG-qk8"/>
                                 </constraints>
                             </view>
-                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cds-1A-PWt" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cds-1A-PWt" customClass="GCActivityIndicator" customModule="GCActivityIndicator">
                                 <rect key="frame" x="165" y="229.5" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="height" constant="44" id="jtg-rE-KZR"/>
                                 </constraints>
                             </view>
-                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idg-nG-Am1" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idg-nG-Am1" customClass="GCActivityIndicator" customModule="GCActivityIndicator">
                                 <rect key="frame" x="165" y="321.5" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -50,7 +50,7 @@
                                     <constraint firstAttribute="width" secondItem="Idg-nG-Am1" secondAttribute="height" multiplier="1:1" id="hLn-0m-eqY"/>
                                 </constraints>
                             </view>
-                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-Yf-8Fo" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-Yf-8Fo" customClass="GCActivityIndicator" customModule="GCActivityIndicator">
                                 <rect key="frame" x="165" y="413.5" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
