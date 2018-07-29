@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     private var activityIndicators: [GCActivityIndicator] {
         return view.subviews.compactMap {
             return $0 as? GCActivityIndicator
-            }.sorted {
-                return $0.tag < $1.tag
         }
     }
 
@@ -28,10 +26,6 @@ class ViewController: UIViewController {
         configureActivityIndicators()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     @IBAction func toggleAnimating() {
         if animating {
@@ -50,8 +44,9 @@ class ViewController: UIViewController {
 
     func configureActivityIndicators() {
         for i in 0..<activityIndicators.count {
-            activityIndicators[i].hidesWhenStopped = false
-            activityIndicators[i].rings = Examples.allExamples[i]
+            let activity = activityIndicators[i]
+            activity.hidesWhenStopped = false
+            activity.rings = examples[activity.tag]
         }
     }
 }
