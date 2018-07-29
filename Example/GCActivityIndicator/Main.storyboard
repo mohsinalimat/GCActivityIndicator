@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,26 +26,55 @@
                                     <action selector="toggleAnimating" destination="FDz-t4-eRF" eventType="touchUpInside" id="P9J-MG-ZJh"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLn-kF-JAX" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
-                                <rect key="frame" x="67" y="327.5" width="240" height="32"/>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAm-5V-Cd6" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                                <rect key="frame" x="165" y="137.5" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="317-Cd-7BL"/>
-                                    <constraint firstAttribute="width" constant="240" id="Fx5-ue-eY6"/>
+                                    <constraint firstAttribute="width" constant="44" id="ObY-hN-TZX"/>
+                                    <constraint firstAttribute="width" secondItem="XAm-5V-Cd6" secondAttribute="height" multiplier="1:1" id="W7M-RG-qk8"/>
+                                </constraints>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cds-1A-PWt" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                                <rect key="frame" x="165" y="229.5" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cds-1A-PWt" secondAttribute="height" multiplier="1:1" id="C5g-0e-3D6"/>
+                                    <constraint firstAttribute="height" constant="44" id="jtg-rE-KZR"/>
+                                </constraints>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idg-nG-Am1" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                                <rect key="frame" x="165" y="321.5" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="EB8-yN-ZT2"/>
+                                    <constraint firstAttribute="width" secondItem="Idg-nG-Am1" secondAttribute="height" multiplier="1:1" id="hLn-0m-eqY"/>
+                                </constraints>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-Yf-8Fo" customClass="GCCustomActivityIndicator" customModule="GCActivityIndicator">
+                                <rect key="frame" x="165" y="413.5" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qJR-Yf-8Fo" secondAttribute="height" multiplier="1:1" id="Hph-lU-Gsr"/>
+                                    <constraint firstAttribute="width" constant="44" id="rdc-tO-Olk"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cds-1A-PWt" firstAttribute="centerX" secondItem="XAm-5V-Cd6" secondAttribute="centerX" id="3pp-zb-Q51"/>
+                            <constraint firstItem="qJR-Yf-8Fo" firstAttribute="top" secondItem="Idg-nG-Am1" secondAttribute="bottom" constant="48" id="502-PG-5oD"/>
+                            <constraint firstItem="Idg-nG-Am1" firstAttribute="centerX" secondItem="cds-1A-PWt" secondAttribute="centerX" id="6CG-0X-UJW"/>
+                            <constraint firstItem="cds-1A-PWt" firstAttribute="top" secondItem="XAm-5V-Cd6" secondAttribute="bottom" constant="48" id="8KF-kN-gw1"/>
+                            <constraint firstItem="Idg-nG-Am1" firstAttribute="centerY" secondItem="7Na-ru-0sW" secondAttribute="centerY" id="9Ot-Aj-yaP"/>
                             <constraint firstItem="7Na-ru-0sW" firstAttribute="bottom" secondItem="32E-42-glN" secondAttribute="bottom" constant="20" id="CCc-nu-34k"/>
-                            <constraint firstItem="GLn-kF-JAX" firstAttribute="centerY" secondItem="7Na-ru-0sW" secondAttribute="centerY" id="oEN-xj-Us3"/>
-                            <constraint firstItem="GLn-kF-JAX" firstAttribute="centerX" secondItem="7Na-ru-0sW" secondAttribute="centerX" id="q5f-u6-4ib"/>
+                            <constraint firstItem="Idg-nG-Am1" firstAttribute="centerX" secondItem="7Na-ru-0sW" secondAttribute="centerX" id="Vlf-Nv-fvU"/>
+                            <constraint firstItem="qJR-Yf-8Fo" firstAttribute="centerX" secondItem="Idg-nG-Am1" secondAttribute="centerX" id="dI8-7k-iMs"/>
                             <constraint firstItem="32E-42-glN" firstAttribute="centerX" secondItem="7Na-ru-0sW" secondAttribute="centerX" id="thf-Nk-pbp"/>
+                            <constraint firstItem="Idg-nG-Am1" firstAttribute="top" secondItem="cds-1A-PWt" secondAttribute="bottom" constant="48" id="u2s-u7-RZ9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Na-ru-0sW"/>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="GLn-kF-JAX" id="Jct-cu-kZe"/>
                         <outlet property="animateButton" destination="32E-42-glN" id="Rz9-tZ-Vdb"/>
                     </connections>
                 </viewController>

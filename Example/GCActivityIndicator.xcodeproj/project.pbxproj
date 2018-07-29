@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		BF8FA1D9210E19E300F68177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8FA1D8210E19E300F68177 /* Main.storyboard */; };
+		BFDAF2B6210E4EEE0097034D /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAF2B5210E4EEE0097034D /* Examples.swift */; };
 		EF85D0513822FFDF4A8A39B2 /* Pods_GCActivityIndicator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC916B67A2A761108577253 /* Pods_GCActivityIndicator_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		7EBED42C8ADF25321E1500B6 /* Pods_GCActivityIndicator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCActivityIndicator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71A4C2BA01430EA06193341 /* Pods-GCActivityIndicator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCActivityIndicator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCActivityIndicator_Tests/Pods-GCActivityIndicator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BF8FA1D8210E19E300F68177 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BFDAF2B5210E4EEE0097034D /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
 		C0EEB7F8A7A35A4A334632AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DEFBA70E5E7813237F845121 /* Pods-GCActivityIndicator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCActivityIndicator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCActivityIndicator_Example/Pods-GCActivityIndicator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E97B25664EF4AF76E74D48B8 /* Pods-GCActivityIndicator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCActivityIndicator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCActivityIndicator_Example/Pods-GCActivityIndicator_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				BFDAF2B5210E4EEE0097034D /* Examples.swift */,
 				BF8FA1D8210E19E300F68177 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -363,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				BFDAF2B6210E4EEE0097034D /* Examples.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

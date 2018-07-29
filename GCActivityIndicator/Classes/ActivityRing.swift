@@ -22,7 +22,7 @@ public struct ActivityRing {
                 start: CGFloat,
                 end: CGFloat,
                 clockwise: Bool,
-                lineWidth: CGFloat = 0.125,
+                lineWidth: CGFloat = 0.1,
                 overlaps: Bool = false
         ) {
         self.clockwise = clockwise
