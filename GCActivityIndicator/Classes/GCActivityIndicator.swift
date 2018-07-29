@@ -9,11 +9,16 @@
 import Foundation
 import UIKit
 
+/// Models a view with some number of activity indicator rings.
 public class GCActivityIndicator: UIView {
 
+    /// Whether the view should hide when animation stops.
     public var hidesWhenStopped: Bool = true
+
+    /// Whether the view is currently animating.
     public private(set) var isAnimating: Bool = false
 
+    /// The ActivityRings belonging to the view.
     public var rings: [ActivityRing] = [] {
         didSet {
             configureRings()
@@ -30,6 +35,8 @@ public class GCActivityIndicator: UIView {
         configureView()
     }
 
+
+    /// Stops all animation of ActivityRings.
     public func stopAnimating() {
         isAnimating = false
         isHidden = hidesWhenStopped
@@ -38,6 +45,7 @@ public class GCActivityIndicator: UIView {
         }
     }
 
+    /// Starts animating all ActivityRings.
     public func startAnimating() {
         isAnimating = true
         isHidden = false
