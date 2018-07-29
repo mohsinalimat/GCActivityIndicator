@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/GCActivityIndicator.svg?style=flat)](https://cocoapods.org/pods/GCActivityIndicator)
 [![Platform](https://img.shields.io/cocoapods/p/GCActivityIndicator.svg?style=flat)](https://cocoapods.org/pods/GCActivityIndicator)
 
+[Documentation](https://gtchance.github.io/GCActivityIndicator/)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
