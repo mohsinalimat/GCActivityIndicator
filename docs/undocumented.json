@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/graham/Desktop/GCActivityIndicator/GCActivityIndicator/Classes/GCActivityIndicator.swift",
+      "line": 28,
+      "symbol": "GCActivityIndicator.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/graham/Desktop/GCActivityIndicator/GCActivityIndicator/Classes/GCActivityIndicator.swift",
+      "line": 33,
+      "symbol": "GCActivityIndicator.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/graham/Desktop/GCActivityIndicator"
+}
