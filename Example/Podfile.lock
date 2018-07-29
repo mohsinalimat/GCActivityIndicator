@@ -23,7 +23,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - FBSnapshotTestCase
     - Nimble
     - Nimble-Snapshots
@@ -44,4 +44,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 7f98745e8cc243e5ae927c354dc62949afc3786d
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
