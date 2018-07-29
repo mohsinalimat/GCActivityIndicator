@@ -17,7 +17,7 @@ GCActivityIndicator is available through [CocoaPods](https://cocoapods.org). To 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'GCActivityIndicator', ~> '0.1.0'
+pod 'GCActivityIndicator', '~> 0.1.0'
 ```
 
 ## Author
