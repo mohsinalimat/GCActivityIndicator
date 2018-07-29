@@ -1,7 +1,6 @@
 use_frameworks!
 
 target 'GCActivityIndicator_Example' do
-  pod 'GCActivityIndicator', :path => '../'
 
   target 'GCActivityIndicator_Tests' do
     inherit! :search_paths
