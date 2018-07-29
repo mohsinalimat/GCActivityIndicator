@@ -11,6 +11,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+<img src="https://github.com/gtchance/GCActivityIndicator/blob/development/example.gif" width="300" height="533" />
+
 ## Requirements
 
 ## Installation
