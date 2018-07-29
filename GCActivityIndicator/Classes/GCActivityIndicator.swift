@@ -12,7 +12,6 @@ import UIKit
 public class GCActivityIndicator: UIView {
 
     public var hidesWhenStopped: Bool = true
-
     public private(set) var isAnimating: Bool = false
 
     public var rings: [ActivityRing] = [] {
@@ -21,14 +20,28 @@ public class GCActivityIndicator: UIView {
         }
     }
 
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configureView()
+    }
+
     public override init(frame: CGRect) {
         super.init(frame: frame)
         configureView()
     }
 
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        configureView()
+    public func stopAnimating() {
+        isAnimating = false
+        isHidden = hidesWhenStopped
+        ringLayers.forEach {
+            $0.currentAnimation = nil
+        }
+    }
+
+    public func startAnimating() {
+        isAnimating = true
+        isHidden = false
+        addAnimations()
     }
 
     private func configureView() {
@@ -45,20 +58,6 @@ public class GCActivityIndicator: UIView {
     private func configureRings() {
         removeAllRings()
         addRingLayers()
-    }
-
-    public func stopAnimating() {
-        isAnimating = false
-        isHidden = hidesWhenStopped
-        ringLayers.forEach {
-            $0.currentAnimation = nil
-        }
-    }
-
-    public func startAnimating() {
-        isAnimating = true
-        isHidden = false
-        addAnimations()
     }
 
     private func addAnimations() {
@@ -88,13 +87,17 @@ public class GCActivityIndicator: UIView {
         let maxRadius = maxDiameter / 2
         for i in 0..<rings.count {
             let ring = rings[i]
+            let radius: CGFloat
             if i == 0 {
-                radii.append(maxRadius - ring.lineWidth * maxRadius)
+                radius = maxRadius - ring.lineWidth * maxRadius
             } else if rings[i].overlaps {
-                radii.append(radii[i-1] - (ring.lineWidth - rings[i-1].lineWidth) * maxRadius)
+                radius = radii[i-1] - (ring.lineWidth - rings[i-1].lineWidth) * maxRadius
             } else {
-                radii.append(radii[i-1] - (rings[i-1].lineWidth * maxDiameter) / 2 - (ring.lineWidth * maxDiameter) / 2)
+                radius = radii[i-1]
+                    - (rings[i-1].lineWidth * maxDiameter) / 2
+                    - (ring.lineWidth * maxDiameter) / 2
             }
+            radii.append(radius)
         }
         return radii
     }

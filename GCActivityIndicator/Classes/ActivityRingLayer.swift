@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class ActivityRingLayer: CAShapeLayer {
+private let animationKey = "rotationAnimation"
 
-    private let animationKey = "rotationAnimation"
+class ActivityRingLayer: CAShapeLayer {
 
     var currentAnimation: CABasicAnimation? {
         didSet {
