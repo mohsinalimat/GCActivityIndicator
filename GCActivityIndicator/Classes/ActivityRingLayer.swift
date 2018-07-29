@@ -11,14 +11,14 @@ import UIKit
 
 class ActivityRingLayer: CAShapeLayer {
 
-    private let ANIMATION_KEY = "rotationAnimation"
+    private let animationKey = "rotationAnimation"
 
     var currentAnimation: CABasicAnimation? {
         didSet {
             if let animation = currentAnimation {
-                add(animation, forKey: ANIMATION_KEY)
+                add(animation, forKey: animationKey)
             } else {
-                removeAnimation(forKey: ANIMATION_KEY)
+                removeAnimation(forKey: animationKey)
             }
         }
     }
@@ -47,7 +47,7 @@ class ActivityRingLayer: CAShapeLayer {
 
     func startAnimating() {
         guard let ring = ring else { return }
-        let animation = CABasicAnimation(keyPath:"transform.rotation.z")
+        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.duration = 0.8
         animation.isRemovedOnCompletion = false
         animation.fromValue = 0
@@ -56,7 +56,6 @@ class ActivityRingLayer: CAShapeLayer {
         animation.repeatCount = Float.infinity
         currentAnimation = animation
     }
-
 
     private func configure(ring: ActivityRing?, radius: CGFloat = 0) {
         self.ring = ring
@@ -81,4 +80,3 @@ class ActivityRingLayer: CAShapeLayer {
             ).cgPath
     }
 }
-

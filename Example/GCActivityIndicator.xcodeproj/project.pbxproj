@@ -170,8 +170,8 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				060A28896322AD4B0931E697 /* [CP] Embed Pods Frameworks */,
 				BFDAF297210E49AD0097034D /* Lint */,
+				9B72ADA455CCEBAB55AD5BE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,24 +263,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		060A28896322AD4B0931E697 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GCActivityIndicator_Example/Pods-GCActivityIndicator_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GCActivityIndicator/GCActivityIndicator.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCActivityIndicator.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCActivityIndicator_Example/Pods-GCActivityIndicator_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		402245439FD466CDD57A65A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +303,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCActivityIndicator_Tests/Pods-GCActivityIndicator_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B72ADA455CCEBAB55AD5BE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GCActivityIndicator_Example/Pods-GCActivityIndicator_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GCActivityIndicator/GCActivityIndicator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCActivityIndicator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCActivityIndicator_Example/Pods-GCActivityIndicator_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B87D09D43451E7F7A3E4E0E8 /* [CP] Check Pods Manifest.lock */ = {

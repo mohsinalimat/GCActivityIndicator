@@ -35,7 +35,6 @@ public class GCCustomActivityIndicator: UIView {
         backgroundColor = UIColor.clear
         configureRings()
     }
-    
 
     private var ringLayers: [ActivityRingLayer] {
         return (layer.sublayers ?? []).compactMap {
@@ -61,7 +60,6 @@ public class GCCustomActivityIndicator: UIView {
         isHidden = false
         addAnimations()
     }
-
 
     private func addAnimations() {
         ringLayers.forEach {
@@ -100,5 +98,5 @@ public class GCCustomActivityIndicator: UIView {
         }
         return radii
     }
-    
+
 }
